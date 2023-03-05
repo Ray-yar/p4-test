@@ -11,8 +11,7 @@
         <h1>Contact Form</h1>
         <form action="add" method="POST">
             {% csrf_token %}
-            <input type="text" name="title" id="title" placeholder="Title">
-            <input type="checkbox" name="done" id="done">
+            {{ form }}
             <input type="submit" value="Submit">
         </form>
     </div>
